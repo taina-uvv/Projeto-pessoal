@@ -1,0 +1,257 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+body{
+    background-color: #9638EB;
+    margin: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9638EB;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 10px 10px 0 0;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.nav-left i {
+  font-size: 18px;
+}
+
+.nav-right {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+.nav-right a:hover {
+  opacity: 0.8;
+}
+h2{
+    text-align: center;
+    color:#9333EA;
+}
+p{
+    color: #454E5C;
+    text-align: justify;
+    hyphens: auto;
+}
+li{
+    color: #454E5C;
+    text-align: justify;
+}
+h3{
+    color: #9333EA;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+}
+a:hover{
+    color:#007bff;
+}
+main{
+    background-color:#BF81FC;
+    padding: 2% 1%;
+    margin-top: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: row;
+    align-items: stretch;
+    min-height: 100vh;
+    overflow-x: hidden;
+    align-content: space-between;
+}
+.container{
+    flex: 1 1 60%; 
+    min-width: 300px;
+    background-color: beige;
+    padding: 2%;
+    border-radius: 2%;
+}
+.caixa{
+    padding: 1%;
+    width: 40%;
+    text-align: center;
+    background-color: #BF81FC;
+}
+.p-caixa{
+  color: white;
+}
+h6{
+    color: white;
+}
+.imagem-principal{
+    flex: 1 1 30%;
+    min-width: 200px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+    padding: 2%;
+    border-radius: 2%;
+}
+.imagem-principal img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+} 
+.section2 {
+    text-align: center; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+.section3{
+    text-align: center; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+.section4{
+    text-align: center; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+.imagem-curriculo{
+    flex: 1 1 30%;
+    min-width: 200px;
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+}
+.imagem-curriculo img{
+    margin-top: 8%;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+.linkedin{
+    width: 50%;
+}
+.info-curriculo{
+    background-color: #BF81FC;
+    padding: 2%;
+    border-radius: 10px;
+}
+.t-info{
+  color: white;
+}
+#link-c{
+    font-size: x-small;
+    color: black;
+}
+#link-c:hover{
+    color:#007bff;
+}
+#curriculo {
+  flex: 1 1 30%;
+  background-color: beige;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  border-radius: 2%;
+}
+.serviço {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: #fff;
+}
+.serviço th, .serviço td {
+  padding: 10px;
+  border: 1px solid #999;
+}
+
+.table-container {
+  overflow-x: auto;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .navbar{
+    justify-content:center ;
+    align-items:center ;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px ;
+  }
+  main {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .container, .imagem-principal {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .imagem-principal {
+    margin-top: 15px;
+  }
+  .imagem-curriculo {
+    margin-top: 0px;
+    margin-bottom: 5%;
+  }
+  .caixa{
+    width: 100%;
+  }
+  h6{
+    font-size: medium;
+  }
+  a{
+    font-size: medium;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .serviço th, .serviço td {
+    padding: 8px;
+    font-size: 14px;
+  }
+  #curriculo, .container{
+    width: 100%;
+    padding: 5%;
+  }
+
+}
+
+
+
+
+
+
