@@ -10,13 +10,13 @@ Este é um projeto de desenvolvimento de um site pessoal criado com o objetivo d
 
 ## 📂 Estrutura de pastas
 projeto/
-├── Imagens/ → Pasta com as imagens do site
-├── index.html → Página inicial
-├── page001.html → Página de currículo
-├── page002.html → Página de serviços
-├── page003.html → Página de formulário
-├── style.css → Arquivo de estilos
-└── README.md → Descrição do projeto
+- Imagens/ → Pasta com as imagens do site
+- index.html → Página inicial
+- page001.html → Página de currículo
+- page002.html → Página de serviços
+- page003.html → Página de formulário
+- style.css → Arquivo de estilos
+- README.md → Descrição do projeto
 
 ## 🎯 Objetivo
 O principal objetivo deste projeto é colocar em prática os conceitos básicos de desenvolvimento web, como:
