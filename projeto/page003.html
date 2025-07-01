@@ -63,12 +63,41 @@
     }
     .radio-container {
     display: flex;
-    align-items: center; /* Alinha verticalmente */
-    margin-bottom: 10px; /* Espaço entre os elementos */
-  }
-  input[type="radio"] {
-    margin-right: 5px;
-  }
+    align-items: center; 
+    margin-bottom: 10px; 
+    }
+    input[type="radio"] {
+        margin-right: 5px;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: 8px; 
+    }
+
+    .checkbox-group {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .checkbox-option {
+        display: flex; 
+        align-items: center; 
+        margin-bottom: 8px; 
+    }
+
+    .checkbox-option input[type="checkbox"] {
+        width: auto; 
+        margin-right: 8px; 
+        margin-top: 0; 
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+
+    .checkbox-option label {
+        font-weight: normal; 
+        margin-bottom: 0;
+        display: inline; 
+    }
    
     @media screen and (max-width: 768px) {
         .container {
@@ -143,35 +172,33 @@
                 </div>
             </div>
             <div class="coluna-direita">
-                <div class="servico">
-                    <label>Serviço desejado:</label><br>
-                    <input type="checkbox" id="estatica" name="servicos" value="estatica">
-                    <label for="estatica">Página estática</label><br>
-
-                    <input type="checkbox" id="dinamica" name="servicos" value="dinamica">
-                    <label for="dinamica">Página dinâmica</label><br>
-
-                    <input type="checkbox" id="avancada" name="servicos" value="avancada">
-                    <label for="avancada">Página super avançada</label><br><br>
-
-                    <label for="quantidade">Quantidade de páginas:</label><br>
-                    <select id="quantidade" name="quantidade">
-                        <option value="">Selecione uma quantidade</option>
-                        <option value="1-2">1-2 páginas</option>
-                        <option value="3-5">3-5 páginas</option>
-                        <option value="+5">+5 páginas</option>
-                    </select><br><br>
+            <div class="form-group"> <label>Serviço desejado:</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="estatica" name="servicos" value="estatica">
+                        <label for="estatica">Página estática</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="dinamica" name="servicos" value="dinamica">
+                        <label for="dinamica">Página dinâmica</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="avancada" name="servicos" value="avancada">
+                        <label for="avancada">Página super avançada</label>
+                    </div>
                 </div>
+            </div>
                 <br><br>
                 <div class="descricao">
                     <label for="descricao">Descrição do serviço a ser contratado:</label><br>
                     <textarea id="descricao" name="descricao" rows="6" cols="40" placeholder="Escreva aqui..."></textarea><br><br>
                 </div>
                 <br><br>
-                <button type="submit">Enviar</button>
+                <button type="submit" onclick="enviar()">Enviar</button>
             </div>
         </div>
     </form>
 </main>
+<script src="./script.js"></script>
 </body>
 </html>
